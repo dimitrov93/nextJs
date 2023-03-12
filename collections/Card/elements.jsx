@@ -6,6 +6,10 @@ export const StyledSection = styled.div`
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+
+    @media (max-width: 768px) {
+    max-width: 90%;
+  }
 `;
 
 export const StyledHeader = styled.h1`
@@ -14,6 +18,11 @@ export const StyledHeader = styled.h1`
   text-align: center;
   font-weight: 600;
   font-family: Arial, Helvetica, sans-serif;
+
+  @media (max-width: 768px) {
+    font-size: 2.5rem;
+  }
+
 `;
 
 export const StyledDescription = styled.h3`
@@ -21,6 +30,10 @@ export const StyledDescription = styled.h3`
   font-size: 2rem;
   text-align: center;
   font-weight: 100;
+
+  @media (max-width: 768px) {
+    font-size: 1.5rem;
+  }
 `;
 
 export const StyledInfoDiv = styled.div`
@@ -29,9 +42,19 @@ export const StyledInfoDiv = styled.div`
   justify-content: center;
   gap: 5rem;
   margin-top: 5rem;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
 `;
 export const InfoDivImg = styled.div`
   max-width: 70%;
+
+  @media (max-width: 768px) {
+    max-width: 100%;
+  }
 `;
 
 export const CardMain = styled.div`
@@ -40,6 +63,10 @@ export const CardMain = styled.div`
   gap: 3rem;
   justify-content: center;
   width: 40%;
+
+  @media (max-width: 768px) {
+    width: 80%;
+  }
 `;
 
 export const CardContainer = styled.div`
@@ -55,8 +82,11 @@ export const CardContainer = styled.div`
     transform: translateY(-10px);
     border: 2px solid blue;
   }
+
+
 `;
 export const CardImage = styled.div`
+
 `;
 
 export const InfoCard = styled.div``;
@@ -70,13 +100,18 @@ export const InfoCardHeader = styled.h4`
     color: blue;
     text-decoration: underline;
   }
+
+
 `;
 
 export const InfoCardDesc = styled.p`
   font-size: 1.15rem;
   pointer-events: none;
   margin: 0;
+
   width: 85%;
+
+
 `;
 
 export const BoldedSpan = styled.span`
