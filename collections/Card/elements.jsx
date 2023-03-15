@@ -8,7 +8,7 @@ export const StyledInfoDiv = styled.div`
   gap: 5rem;
   margin-top: 5rem;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) {
     flex-direction: column;
     align-items: center;
     gap: 2rem;
@@ -17,7 +17,7 @@ export const StyledInfoDiv = styled.div`
 export const InfoDivImg = styled.div`
   max-width: 70%;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) {
     max-width: 100%;
   }
 `;
@@ -29,7 +29,7 @@ export const CardMain = styled.div`
   justify-content: center;
   width: 40%;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) {
     width: 80%;
   }
 `;
