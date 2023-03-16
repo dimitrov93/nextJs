@@ -40,7 +40,7 @@ export const CardContainer = styled.div`
   background: #f9f9f9;
   gap: 1rem;
   transition: transform 0.3s ease-in-out;
-  border: 1px solid transparent;
+  border: 2px solid transparent;
   border-radius: 0.5rem;
   padding: 1rem;
   &:hover {
