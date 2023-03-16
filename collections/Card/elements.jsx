@@ -1,5 +1,8 @@
 // Styled elements for the Card go here
 import styled from "styled-components";
+import {
+  SectionSubheading,  SectionParagraph,
+} from "~/components";
 
 export const StyledInfoDiv = styled.div`
   display: flex;
@@ -15,7 +18,7 @@ export const StyledInfoDiv = styled.div`
   }
 `;
 export const InfoDivImg = styled.div`
-  max-width: 70%;
+  max-width: 60%;
 
   @media (max-width: 1024px) {
     max-width: 100%;
@@ -56,22 +59,31 @@ export const CardImage = styled.div`
 
 export const InfoCard = styled.div``;
 
-export const InfoCardHeader = styled.h4`
+export const InfoCardHeader = styled((props) => <SectionSubheading {...props} />)`
   margin: 0;
-  font-size: 1.5rem;
   pointer-events: none;
+  font-weight: 600;
 
   ${CardContainer}:hover & {
     color: blue;
     text-decoration: underline;
   }
-
+  @media (max-width: 1024px) {
+    font-size: 1.5rem;
+    font-weight: 600;
+    width: 90%;
+    letter-spacing: -1px;
+  }
 
 `;
 
-export const InfoCardDesc = styled.p`
-  font-size: 1.15rem;
-  pointer-events: none;
+export const InfoCardDesc = styled((props) => <SectionParagraph {...props} />)`
   margin: 0;
+  pointer-events: none;
   width: 85%;
+
+  @media (max-width: 1024px) {
+    font-size: 1.1rem;
+    width: 90%;
+  }
 `;
