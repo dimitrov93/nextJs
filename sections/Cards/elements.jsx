@@ -24,6 +24,7 @@ export const StyledHeader = styled((props) => <SectionBigHeading {...props} />)`
 export const StyledDescription = styled((props) => <SectionSubheading {...props} />)`
     margin: 0;
   text-align: center;
+  font-weight: 400;
 
   @media (max-width: 1024px) {
     font-size: 1.5rem;
